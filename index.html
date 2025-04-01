@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background-color: antiquewhite;
+        }
+
+        body {
+            background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2kxdHlxaGJ0OHhpNGEwMTVweXlibmo3aW1pOTY0bjJxbTgxNTM2diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/5umDcAQsdJT9e/giphy.gif);
+            background-size: cover;
+            background-position: center;
+            font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 50px;
+        }
+
+        h1 {
+            font-variant: small-caps;
+            font-size: 8vw;
+            margin-bottom: 0;
+        }
+        h2{
+            font-variant: small-caps;
+            font-size: 3vw;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 2vw;
+            padding-bottom: 0;
+            margin-bottom: 0;
+
+        }
+
+        button {
+            color: white;
+            font-size: 1em;
+            padding: 20px 5px;
+            margin: 5%;
+            width: 200px;
+            height: auto;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.85);
+        }
+
+        .poll {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #summer {
+            background-color: rgb(220, 230, 90);
+            margin-left: 0;
+        }
+
+        #spring {
+            background-color: pink;
+        }
+
+        #fall {
+            background-color: rgb(158, 52, 11);
+        }
+
+        #winter {
+            background-color: rgb(78, 120, 217);
+        } 
+        
+        button:hover{
+            color: black;
+            background-color: white !important;
+            border: solid black;
+            scale: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Spring in New York</h1>
+        <p>...make sure stop and smell the spring air today...</p>
+    </div>
+
+    <div class="content">
+        <h2>Which is the best Season?? </h2>
+        <div class="poll">
+            <button id="summer" type="button">⛱️ Summer</button>
+            <button id="spring" type="button">🌸 Spring</button>
+            <button id="fall" type="button">🍁 Fall</button>
+            <button id="winter" type="button">❄️ Winter</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
